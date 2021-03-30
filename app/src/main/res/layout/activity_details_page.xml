@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsPage">
+
+
+    <ImageView
+        android:id="@+id/game_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/gameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Game Name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_image_details" />
+
+    <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Release Date:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameName" />
+
+    <TextView
+        android:id="@+id/gameRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Metacrtic Rate: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/releaseDate" />
+
+
+    <TextView
+        android:id="@+id/gameDetailString"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:scrollbars="vertical"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/gameRate"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/like_button"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="44dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:drawableLeft="@drawable/disliked_game_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Appcent Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="zg_n_z_arad_n_z_oyun_bulunamad">Üzgünüz, aradığınız oyun bulunamadı!</string>
+</resources>
